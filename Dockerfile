@@ -4,7 +4,7 @@ FROM amazonlinux:latest AS buildstage
 
 RUN yum install java-17-amazon-corretto-devel maven -y
 
-WORKDIR /opt/Jenkins_Sonatype_Nexus_Project
+WORKDIR /opt/Docker_Project
 
 COPY . .
 
@@ -15,7 +15,7 @@ FROM tomcat:9.0
 
 WORKDIR /usr/local/tomcat/webapps
 
-COPY --from=buildstage /opt/Jenkins_Sonatype_Nexus_Project/target/*.war .
+COPY --from=buildstage /opt/Docker_Project/target/*.war .
 
 RUN rm -rf ROOT && mv *.war ROOT.war
 
