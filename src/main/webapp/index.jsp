@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<body style="background-color:BLUE;">
+<body style="background-color:ORANGE;">
 
-<h1> KARTHIK PATEL (MKP MGP MAP MSP) </h1>
+<h1> KARTHIK PATEL  </h1>
 </h1>  DEVOPS ENGINEER   </h1>
 
 </body>
