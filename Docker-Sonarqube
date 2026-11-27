@@ -11,7 +11,7 @@ pipeline {
         stage('checkout') {
             steps {
                 echo 'git checkout stage'
-				git branch: 'main', url: 'https://github.com/karthikpatelmarkhale/Jenkins_Sonatype_Nexus_Project.git'
+				git branch: 'main', url: 'https://github.com/karthikpatelmarkhale/Docker_Project.git'
             }
         }
 
